@@ -1,0 +1,199 @@
+/* IMPOSTAZIONI GENERALI */
+
+@font-face {
+    src: url(../webfonts/fa-brands-400.svg);
+}
+
+.ombreggiatura {
+    padding-bottom: 15px;
+    font-weight: bold;
+    box-shadow: 2px 4px 10px 4px #0f02029e;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(../img/sfondo.png);
+    background-position: 40%;
+}
+
+
+/* HEADER */
+
+header {
+    background: linear-gradient(to bottom, #009abd, #007a8a);
+    color: white;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+header nav {
+    color: white;
+    text-decoration: none;
+    display: block;
+    line-height: 1.5em;
+    margin-top: 20px;
+}
+
+nav ul li::before {
+    content: "\21D2";
+        color: azure;
+}
+nav ul li::after {
+    content: "\21D0";
+        color: azure;
+}
+
+header img {
+    padding: 10px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header p {
+    text-transform: uppercase;
+}
+
+
+/*a::before {
+    content: url(/assets/webfonts/);
+}*/
+
+/* MAIN */
+
+main {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.autore {
+    color: lightgrey;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.autore::before {
+    content: "\f186"; }
+
+strong {
+    color: purple;
+}
+
+main p {
+    line-height: 2;
+}
+
+main li {
+    list-style-position: inside;
+    line-height: 1.5;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+code {
+    background-color: lightgray;
+    border-radius: 10%;
+    border: solid 2px grey;
+}
+
+ul,
+ol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.link {
+    color: #0099cc;
+}
+
+footer {
+    background: linear-gradient(to top, #2a3237, #005566)
+}
+
+address a {
+    color: #ff00ff;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+
+/* TABELLE */
+table {
+    margin: auto;
+}
+
+caption {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+thead {
+    background-color: #3366cc;
+    color: white;
+}
+
+iframe {
+    border-radius: 8%;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+section {
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+section h2 {
+    font-size: x-large;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+section p {
+    line-height: 1.5;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+fieldset {
+    height: 20px;
+    width: 184px;
+    border-style: none;
+    border-bottom-style: dotted;
+    font-size: large;
+    padding: 0;
+}
+
+button {
+    padding: 4px;
+    border: 0;
+    background-color: #3366cc;
+    color: white;
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+
+/* FOOTER */

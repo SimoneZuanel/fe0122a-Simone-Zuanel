@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    color: #393d41;
+}
+
+div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+
+/* MAIN */
+main{
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+}
+
+h1, h3 {
+    color: #25a2c3;
+    line-height: 1.5;
+}
+
+h1, h2, h3, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#corso {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+button {
+    color: white;
+    background-color: #f04c2f;
+    text-transform: uppercase;
+    padding: 10px 25px 10px 25px;
+    border-radius: 8%;
+    border: 0;
+}
+
+#corso p{
+    padding-bottom: 10px;
+}
+
+.piccoli{
+    border: 0;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.piccoli img {
+    border-radius: 100%;
+    max-width: 250px;
+}
+
+#arancione {
+    background-color: #f04c2f;
+    color: white;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    
+}
+
+blockquote {
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+figure figcaption span {
+    display: block;
+    font-size: 0.6em;
+}
+
+.fotocentro img{
+    max-width: 300px;
+    padding-top: 50px;
+}
+
+.bordo {
+    margin: auto;
+    border-left-width: 10px;
+    border-top-width: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-width: thin;
+    border-color: #dee1e3;;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 35px;
+    font-size: 1rem;
+    background-color: #25a2c3;
+    color: white;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+a {
+    color: white;
+}
+
+#mail {
+    display: block;
+}
+
+hr {
+    color: white;
+    max-width: 220px;
+}
+
+#copyright {
+    font-size: 0.8em;
+}
