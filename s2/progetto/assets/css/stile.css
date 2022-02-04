@@ -47,6 +47,7 @@ h4 {
 }
 
 .button {
+    border: none;
     padding: 0.7em;
     color: white;
     font-size: 1.2rem;
@@ -56,11 +57,17 @@ h4 {
 /* HEADER */
 header {
     color: white;
-    box-shadow: #d3d3d3;
+    box-shadow: 0px 6px 6px 2px #d3d3d3;
 }
 
 #logo {
     margin: 0.5em 0 0 0.5em;
+}
+
+
+.registrati {
+    font-size: 1em;
+    padding: 0.5em 1em;
 }
 
 /* MAIN */
@@ -133,6 +140,59 @@ header {
         margin-bottom: 1.2em;
     }
     
+    /* CONTATTI.HTML */
+.contatti {
+    margin: 0 1.2em;
+    text-align: center;
+}
+
+#h1-contatti {
+    padding: 1.5em 0;
+    text-align: center;
+    padding-bottom: 0.5em;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.form {
+    margin-bottom: 3em;
+    flex-basis: 75%;
+}
+
+textarea {
+    padding: 1em 0 0 1em;
+    border: 1px solid gray;
+    font-style: italic;
+    text-align: left;
+    width: 95%;
+}
+
+.form1 {
+    padding: 0em 0 0 1em;
+    border: 1px solid gray;
+    font-style: italic;
+    text-align: left;
+    line-height: 3;
+    display: block;
+    margin: 1.5em auto;
+    width: 95%;
+}
+
+.form button {
+    padding: 0 1.5em;
+    text-align: center;
+    font-style: normal;
+    border: none;
+}
+
+.info h2 {
+    margin-bottom: 0.5em;
+}
+
+.info p {
+    margin-bottom: 1.6em;
+}
+
 
 /* TABLE */
 
@@ -165,6 +225,9 @@ footer {
         .big-email input {
             line-height: 3.5;
         }
+        address {
+            text-align: center;
+        }
 
 /* RESPONSIVE */
 @media screen and (max-width: 500px) {
@@ -193,10 +256,6 @@ footer {
         color: gray;
     }
 
-    .registrati {
-        padding: 7px;
-    }
-
     .menu {
         display: none;
         position: absolute;
@@ -211,12 +270,20 @@ footer {
         color: #e42424;
     }
 
+    #main-contatti {
+        padding: 0;
+    }    
+
+    .form button {  
+        margin-top: 0.5em;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 180px;
+        line-height: 2.5;  
+    }    
 }
 
 @media screen and (min-width: 500px) {
-    body {
-        padding: 0 2em;
-    }
     
     .menu {
         display: none;
@@ -252,10 +319,6 @@ footer {
         padding-right: 0;
         margin-right: 1em;
     }
-
-    .registrati {
-        padding: 7px;
-    }    
 
     a {
         font-size: 1.3em;
@@ -303,10 +366,40 @@ footer {
         display: flex;
         column-gap: 0.3em;
         padding: 0 1.2em;
+        justify-content: center;
     }
 
     .footer-int:nth-child(2) {
             padding: 1.5em 0;
+    }
+
+    #main-contatti {
+        padding: 0 1.5em;
+    }
+
+    #h1-contatti {
+        margin-bottom: 0;
+    }
+
+    .contatti {
+        display: flex;
+        margin: 0;
+        padding: 0 1.2em 1.5em 1.2em;
+        column-gap: 3em;
+    }
+
+    .form button {
+        margin-top: 0.8em;
+        padding: 0;
+        width: 220px;
+    }
+
+    .info {
+        padding-top: 2em;
+    }
+
+    #distanza {
+        margin-bottom: 1.2em;
     }
 
 }
@@ -315,7 +408,25 @@ footer {
     body {
        padding: 0;
     }
-    
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    header img {
+        width: 180px;
+        margin-top: 0;
+        padding-top: 10px;
+    }
+
+    .tencontatti {
+        font-size: 0.65em;
+    }
+
     .menu {
         display: none;
     }
@@ -351,9 +462,43 @@ footer {
         margin-bottom: 40px;
     }
 
-    address {
-        text-align: center;
+    #body-contatti {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        padding-top: 20px;
+    }
+
+    .form {
+        margin-bottom: 3em;
+        flex-basis: 50%;
+    }
+
+    .form button {
+        width: 200px;
+        margin-top: 15px;
+    }
+
+    .contatti {
+        padding: 0 0 1.5em 1.2em;
+
+    }
+    
+    #h1-contatti {
+        margin-bottom: 0;
+    }
+    
+    #main-contatti {
+        padding: 0 4em;
+    }
+    
+    .footer-flex {
+        padding: 0 6.2em;
+    }
+
+    footer p {
+        line-height: 1.5;
     }
 }
-
 
