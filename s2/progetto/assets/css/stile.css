@@ -1,0 +1,359 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+    font-size: 62,5%;
+}
+
+body {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: 'fira sans';
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: white;
+    padding: 1em 0;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+h2 {
+    line-height: 1;
+    font-size: 2rem;
+}
+
+h3 {
+    line-height: 1;
+    font-size: 1.7rem;
+    margin-bottom: 0.6em;
+}
+
+h4 {
+    line-height: 1;
+    font-size: 1.5rem;
+}
+
+.fas {
+    color: #e42424;
+}
+
+.far {
+    color: #e42424;
+}
+
+.fab {
+    color: #e42424;
+}
+
+.button {
+    padding: 0.7em;
+    color: white;
+    font-size: 1.2rem;
+    background: linear-gradient(#6cc1e2, #392f7a);
+}
+
+/* HEADER */
+header {
+    color: white;
+    box-shadow: #d3d3d3;
+}
+
+#logo {
+    margin: 0.5em 0 0 0.5em;
+}
+
+/* MAIN */
+.titolo {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 1.2em;
+}
+
+    .titolo p {
+        text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+        padding: 1em 0;
+    }
+
+.titolo2 {
+    margin-top: 2em;
+    text-align: center;
+    padding: 0 1.2em;
+}
+
+    .titolo2 p {
+        margin: 1.2em 0;
+        padding: 0 1.2em;
+    }
+
+.scritte-logo {
+    text-align: center;
+    padding: 0 1em;
+    margin: 1.5em 0 2em 0;
+}
+
+.scritte-logo2 {
+    padding: 0 1.2em;
+}
+
+    .paragrafi {
+        text-align: center;
+        margin-bottom: 1.7em;
+    }
+
+.sezione-blu {
+    text-align: center;
+    background-color: rgb(26, 26, 88);
+    color: white;
+    padding: 3.5em 0;
+    margin-top: 2.4em;
+}
+
+    .sezione-blu h2 {
+        padding: 0 1.5em;
+        margin-bottom: 1.1em;
+    }
+
+    .sezione-blu p {
+        margin-bottom: 1.5em;
+    }
+
+.img-paragrafi {
+    margin: 1.5em 0;
+}
+
+.notebook {
+    text-align: center;
+}
+
+    .notebook img {
+        width: 80%;
+        margin-bottom: 1.2em;
+    }
+    
+
+/* TABLE */
+
+/* FOOTER */
+footer {
+    text-align: left;
+    background-color: rgb(238, 238, 238);
+    margin-top: 2.5em;
+    padding: 1.2em;
+}
+
+    .footer-int {
+        padding: 1.5em 1.5em 0.5em 1.5em;
+        margin-bottom: 1.3em;
+    }
+
+    .footer-int h4 {
+        margin-bottom: 1.1em;
+    }
+
+    .big-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .big-email button {
+            border: none;
+        }
+
+        .big-email input {
+            line-height: 3.5;
+        }
+
+/* RESPONSIVE */
+@media screen and (max-width: 500px) {
+    header nav ul {
+        height: 0;
+        visibility: hidden;
+    }
+    
+    .menu:checked ~ nav ul {
+        height: 150px;
+        visibility: visible;
+    }
+
+    .tendina {
+        margin-right: 1.3em;
+        padding-bottom: 1.2em;
+    }
+
+    li {
+        text-align: right;
+    }
+
+    a {
+        font-size: 1.3em;
+        text-decoration: none;
+        color: gray;
+    }
+
+    .registrati {
+        padding: 7px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 3vh;
+        right: 5vw;
+    }
+    
+    .icon {
+        position: absolute;
+        top: 3vh;
+        right: 5vw;
+        color: #e42424;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        padding: 0 2em;
+    }
+    
+    .menu {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tendina {
+        padding-top: 0.7em;
+    }
+
+    #logo {
+        margin-top: 0.6em;
+        margin-left: 1.2em;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        padding: 0.6em;
+    }
+    
+    li:nth-child(3) {
+        padding-right: 0;
+        margin-right: 1em;
+    }
+
+    .registrati {
+        padding: 7px;
+    }    
+
+    a {
+        font-size: 1.3em;
+        text-decoration: none;
+        color: gray;
+    }
+
+    .titolo {
+        padding: 5em;
+    }
+
+    .titolo2 p {
+        padding: 0 8em;
+    }
+
+    .scritte-logo {
+        display: flex;
+        column-gap: 1.2em;
+        padding: 0 1.2em;
+    }
+
+    .paragrafi {
+        padding: 0 1.2em;
+    }
+
+    .paragrafi p {
+        text-align: left;
+    }
+
+    .img-paragrafi {
+        display: flex;
+        justify-content: center;
+        padding: 0 1.2em;
+    }
+
+    .scritte-logo2 {
+        padding: 1.6em 0;
+    }
+
+    .notebook img {
+        width: 100%;
+    }
+
+    .footer-flex {
+        display: flex;
+        column-gap: 0.3em;
+        padding: 0 1.2em;
+    }
+
+    .footer-int:nth-child(2) {
+            padding: 1.5em 0;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+       padding: 0;
+    }
+    
+    .menu {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+
+    .titolo {
+        padding-right: 200px;
+        padding-left: 230px;
+    }
+
+    .titolo2 p {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+
+    .paragrafi .paragrafi:nth-child(1) {
+        padding-left: 30px;
+    }
+
+    .scritte-logo {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .img-paragrafi {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    address {
+        text-align: center;
+    }
+}
+
+
