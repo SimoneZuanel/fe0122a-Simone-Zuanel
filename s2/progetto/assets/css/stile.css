@@ -46,6 +46,16 @@ h4 {
     color: #e42424;
 }
 
+.animazione {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0);
+    position: relative;
+    animation-iteration-count: infinite;
+  }
+
 .button {
     border: none;
     padding: 0.7em;
@@ -85,7 +95,7 @@ header {
     }
 
 .titolo2 {
-    margin-top: 2em;
+    margin-top: 3.3em;
     text-align: center;
     padding: 0 1.2em;
 }
@@ -230,7 +240,7 @@ footer {
         }
 
 /* RESPONSIVE */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     header nav ul {
         height: 0;
         visibility: hidden;
@@ -281,9 +291,64 @@ footer {
         width: 180px;
         line-height: 2.5;  
     }    
+
+    /* CHI SIAMO */
+    .main-chi {
+        text-align: center;
+        margin: 0 1.5em;
+    }
+
+    .titolo-chi h2 {
+        color: #000;
+        margin: 1.5em 0 0.8em 0;
+        font-size: 2.3em;
+    }
+
+    .titolo-chi p {
+        margin-bottom: 1.5em;
+    }
+
+    .img-chi img {
+        width: 100%;
+        margin-bottom: 1.2em;
+    }
+
+    .img-chi p {
+        margin-bottom: 1.3em;
+    }
+
+    .table-m table {
+        text-align: left;
+        margin: 5em auto auto auto;
+        border-collapse: collapse;
+    }
+
+         caption {
+             text-align: center;
+             font-size: 1.4em;
+         }
+
+         .table-m table tr {
+             color: black;
+         }
+
+         .table-m table th {
+             font-weight: bold;
+             padding: 0.3em 0.4em 0.3em 0.5em;
+             white-space: nowrap;      
+         }
+
+         .thead {
+             background-color: #d2dce7;
+             color: white;
+         }
+     
+    .table {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 750px) {
     
     .menu {
         display: none;
@@ -352,10 +417,15 @@ footer {
         display: flex;
         justify-content: center;
         padding: 0 1.2em;
+        column-gap: 1.5em;
     }
 
     .scritte-logo2 {
         padding: 1.6em 0;
+    }
+
+    .scritte-logo2 h3 {
+        text-align: left;
     }
 
     .notebook img {
@@ -364,13 +434,21 @@ footer {
 
     .footer-flex {
         display: flex;
-        column-gap: 0.3em;
+        column-gap: 1.3em;
         padding: 0 1.2em;
         justify-content: center;
     }
 
+    .footer-int:nth-child(1) {
+        padding-left: 1.4em;
+    }
+
     .footer-int:nth-child(2) {
-            padding: 1.5em 0;
+            padding: 1.5em 0 0.5em 1.5em;
+    } 
+
+    .footer-int:nth-child(3) {
+        padding: 1.4em 1.5em 0.5em 0;
     }
 
     #main-contatti {
@@ -378,6 +456,7 @@ footer {
     }
 
     #h1-contatti {
+        font-size: 2.5em;
         margin-bottom: 0;
     }
 
@@ -402,6 +481,77 @@ footer {
         margin-bottom: 1.2em;
     }
 
+    /* CHI SIAMO */
+    .main-chi {
+        text-align: center;
+        margin: 0 2em;
+    }
+
+    .titolo-chi {
+        padding: 0 1.3em;
+    }
+
+    .titolo-chi h2 {
+        font-size: 3em;
+        color: #000;
+        margin: 1.5em 0 0.8em 0;
+    }
+
+    .titolo-chi p {
+        margin-bottom: 1.5em;
+    }
+
+    .chi-siamo {
+        display: flex;
+        column-gap: 2em;
+    }
+
+    .img-chi img {
+        width: 100%;
+        margin-bottom: 1.2em;
+    }
+
+    #foto1-chi {
+        width: 96%;
+    }
+
+    .img-chi p {
+        margin-bottom: 1.3em;
+    }
+
+    .table table {
+        text-align: center;
+        margin: 2.5em auto auto auto;
+        border-collapse: collapse;
+        margin-bottom: 1.5em;
+    }
+
+         caption {
+             text-align: center;
+             font-size: 1.7em;
+         }
+
+         .table tr:nth-child(odd) {
+             background-color: #d2dce7;
+         }
+
+         #thead {
+            background-color: #5f82a3;
+            color: white;
+        }
+
+         .table th {
+            padding: 1.2em 1em;
+         }
+
+         .table td {
+            padding: 1.2em 1em;
+         }
+     
+    .table-m {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -421,10 +571,6 @@ footer {
         width: 180px;
         margin-top: 0;
         padding-top: 10px;
-    }
-
-    .tencontatti {
-        font-size: 0.65em;
     }
 
     .menu {
@@ -462,10 +608,6 @@ footer {
         margin-bottom: 40px;
     }
 
-    #body-contatti {
-        font-size: 1.5rem;
-    }
-
     .info {
         padding-top: 20px;
     }
@@ -490,15 +632,50 @@ footer {
     }
     
     #main-contatti {
-        padding: 0 4em;
+        padding: 0 5em;
+    }
+
+    footer {
+        padding: 1.2em 4em;
     }
     
     .footer-flex {
-        padding: 0 6.2em;
+        padding: 2em 3.2em 0 3.2em;
+        column-gap: 3em;
     }
 
     footer p {
         line-height: 1.5;
     }
+
+    .footer-int:nth-child(2) {
+        padding: 1.5em 0 0.5em 1.5em;
+    }
+
+    .footer-int:nth-child(3) {
+        padding: 1.4em 1.5em 0.5em 1.4em;
+    }
+
+    /* CHI SIAMO */
+    .main-chi {
+        padding: 0 8em;
+    }
+
+    .table table {
+        text-align: center;
+        margin: 0 auto;
+        border-collapse: collapse;
+        margin-bottom: 1.5em;
+        margin-top: 5em;
+    }
+
+    .table td {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .table-m {
+        display: none;
+    }    
 }
 
