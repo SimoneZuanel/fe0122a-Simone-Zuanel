@@ -1,0 +1,60 @@
+@import 'variabili';
+
+@mixin fontPrincipale {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(83, 82, 82);
+}
+
+@mixin fontMenu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+body {
+    display: flex;
+    margin:$margin-less;
+}
+
+header {
+    margin:$margin-less;
+}
+
+nav {
+    background-color: $primary-color;
+    width: 37vw;
+    height: 100vh;
+    margin-right: 3vw;
+    @include fontMenu();
+    ul {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 1vw 0 0 1vw;
+    }
+        li {
+            list-style-type: none;
+            padding: 3vh 0.8vh 0 1vh;
+        }
+        &:first-child {
+            padding-top: 5vh;
+        }
+            a {
+                text-decoration: none;
+                color: rgb(161, 22, 22);
+            }
+}
+#main {
+    @include fontPrincipale();
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: large;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
