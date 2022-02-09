@@ -14,6 +14,9 @@
 body {
     display: flex;
     margin:$margin-less;
+    @media screen and (min-width: 700px) {
+        flex-direction: column;
+    }
 }
 
 header {
@@ -25,12 +28,20 @@ nav {
     width: 37vw;
     height: 100vh;
     margin-right: 3vw;
+    @media screen and (min-width: 700px) {
+        width: 100vw;
+        height: 20vh; 
+        }
     @include fontMenu();
     ul {
         margin-top: 0;
         display: flex;
         flex-direction: column;
         padding: 1vw 0 0 1vw;
+        @media screen and (min-width: 700px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        }
     }
         li {
             list-style-type: none;
@@ -46,15 +57,4 @@ nav {
 }
 #main {
     @include fontPrincipale();
-}
-
-@media screen and (min-width: 700px) {
-    h1 {
-        font-size: large;
-    }
-
-    ul {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
+} 
