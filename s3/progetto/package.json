@@ -12,5 +12,6 @@
     "bootstrap-icons": "^1.8.1",
     "node-sass": "^7.0.1"
   },
+  "devDependencies": {},
   "description": ""
 }
