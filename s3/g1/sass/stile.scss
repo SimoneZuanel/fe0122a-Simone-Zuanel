@@ -1,0 +1,37 @@
+$secondarycolor: #c9446c;
+
+body {
+    background-color:$secondarycolor;
+    margin: 0%;
+    margin-top: 3%;
+}
+
+.showcase {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+nav {
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 0 1.5em;
+}
+
+a {
+    text-decoration: none;
+}

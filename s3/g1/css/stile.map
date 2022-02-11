@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "stile.css",
+	"sources": [
+		"../scss/stile.scss",
+		"../scss/_header.scss"
+	],
+	"sourcesContent": [
+		"body {\r\n    background-color: rgb(120, 231, 222);\r\n    margin: 0%;\r\n}\r\n\r\n.showcase {\r\n    text-align: center;\r\n}\r\n\r\n.container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-around;\r\n    height: 100%;\r\n}\r\n\r\nnav {\r\n    background-color: beige;\r\n    display: flex;\r\n    justify-content: space-around;\r\n}\r\n\r\nul {\r\n    display: flex;\r\n}\r\n\r\nli {\r\n    list-style: none;\r\n    padding: 0 1.5em;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n}\r\n\r\n\r\n@import 'header';",
+		""
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,OAAkB;EACpC,MAAM,EAAE,EAAE;CACb;;;AAED,AAAA,SAAS,CAAC;EACN,UAAU,EAAE,MAAM;CACrB;;;AAED,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,YAAY;EAC7B,MAAM,EAAE,IAAI;CACf;;;AAED,AAAA,GAAG,CAAC;EACA,gBAAgB,EAAE,KAAK;EACvB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;CAChC;;;AAED,AAAA,EAAE,CAAC;EACC,OAAO,EAAE,IAAI;CAChB;;;AAED,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,OAAO;CACnB;;;AAED,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;CACxB"
+}
