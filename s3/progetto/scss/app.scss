@@ -1,0 +1,55 @@
+@import 'variabili';
+
+@import 'funzione';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@mixin interpolazione($modifica, $valore) {
+    font-#{$modifica}: $valore;   
+}
+
+body {
+    background: url(../img/bg-bank.jpg) no-repeat center center;
+    background-size: cover;
+    @include interpolazione('family', 'Roboto');
+}
+
+main {
+    font-size: $font-main;
+    h1 {
+        @include interpolazione('size', $font-title);
+        @include interpolazione('family', sans-serif);
+    }
+}
+
+.navbar {
+    background-color: $bg-dark;
+    color: set-contrast-color($bg-dark);
+        .navbar-nav .nav-link {
+            color: $color-nav;
+        }
+            .bi {
+                color: $color-nav;
+         }
+}
+
+.carousel {
+    background: $bg-primary;
+}
+
+.row {
+    background-color: $bg-dark;
+    color: set-contrast-color($bg-dark); 
+    div:nth-child(2) {
+        background-color: $bg-light;
+        color: set-contrast-color($bg-light);
+    }
+}
+.card-text {
+    color: black;
+}
+
+#table {
+    background-color: $bg-dark;
+}
+

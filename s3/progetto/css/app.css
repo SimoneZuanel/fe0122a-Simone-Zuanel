@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background: url(../img/bg-bank.jpg) no-repeat center center;
+  background-size: cover;
+  font-family: "Roboto"; }
+
+main {
+  font-size: 16px; }
+  main h1 {
+    font-size: 28px;
+    font-family: sans-serif; }
+
+.navbar {
+  background-color: #004caf;
+  color: rgba(255, 255, 255, 0.788); }
+  .navbar .navbar-nav .nav-link {
+    color: #dddbdb; }
+  .navbar .bi {
+    color: #dddbdb; }
+
+.carousel {
+  background: radial-gradient(circle, #25dbe4 -35%, #090979 83%); }
+
+.row {
+  background-color: #004caf;
+  color: rgba(255, 255, 255, 0.788); }
+  .row div:nth-child(2) {
+    background-color: white;
+    color: #000; }
+
+.card-text {
+  color: black; }
+
+#table {
+  background-color: #004caf; }
