@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(../img/bg-bank.jpg) no-repeat center center;
+    background: url(../img/bg-bank.jpg) no-repeat center top;
     background-size: cover;
     @include interpolazione('family', 'Roboto');
 }
@@ -23,7 +23,7 @@ main {
 }
 
 .navbar {
-    background-color: $bg-dark;
+    background-color: $bg-dark; 
     color: set-contrast-color($bg-dark);
         .navbar-nav .nav-link {
             color: $color-nav;
@@ -31,7 +31,7 @@ main {
             .bi {
                 color: $color-nav;
          }
-}
+} 
 
 .carousel {
     background: $bg-primary;
