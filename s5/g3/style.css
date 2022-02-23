@@ -1,0 +1,47 @@
+.titolo {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: aliceblue;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
+}
+
+.titolo div {
+    padding: 10px 10px 0 5px;
+    text-transform: uppercase;
+}
+
+.contenuto {
+    box-sizing: border-box;
+    background-color: chocolate;
+    color: beige;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    line-height: 3;
+    padding: 5px;
+}
+
+.nascosto {
+    display: none;
+}
+
+input:hover {
+    background-color: crimson;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    line-height: 2em;
+    margin: 5px auto;
+    width: 100px;
+}
