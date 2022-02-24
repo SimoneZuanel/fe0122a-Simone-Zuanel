@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Redressed&display=swap');
+
+.pointer {
+    cursor: pointer;
+}
+
+body {
+    background-color: #e9b21b;
+    background-size: cover;
+    
+}
+
+#barra {
+    background: radial-gradient(circle farthest-corner at center center, #cba844 0%, #f8f500 100%);
+    padding: 0;
+    height: 7em;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+}
+
+#todolist{
+    font-family: 'Redressed', cursive;
+    background: radial-gradient(circle farthest-corner at center center, #cba844 0%, #f8f500 100%);
+    margin: 0;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#input-dati {
+    margin-top: 1em;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#task_txt{
+    font-size: 1.6em;
+    color: black;
+}
+
+#add_btn{
+    background-color: rgb(95, 93, 93);
+    color: rgb(255, 255, 255);
+    border-radius: 0 4px 4px 0;
+    font-size: 2em;
+
+}
+
+#add_btn:hover{
+    background: radial-gradient(circle farthest-corner at center center, #cba844 0%, #f8f500 100%);
+    color: black;
+}
+
+#tasks_list_html {
+    list-style: none;
+}
+
+li {
+    background-color: beige;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin: 10px;
+    border-radius: 8px;
+
+}
+
+li:hover {
+    transform: scale(1.2) translate(-1px,0px);
+    background-color: #e26d00;
+    color: azure;
+    line-height: 2em;
+}
