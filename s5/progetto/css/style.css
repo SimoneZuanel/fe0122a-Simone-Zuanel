@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Redressed&display=swap');
-
 .pointer {
     cursor: pointer;
 }
@@ -7,7 +6,6 @@
 body {
     background-color: #e9b21b;
     background-size: cover;
-    
 }
 
 #barra {
@@ -15,10 +13,10 @@ body {
     padding: 0;
     height: 7em;
     border: 1px solid black;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
 }
 
-#todolist{
+#todolist {
     font-family: 'Redressed', cursive;
     background: radial-gradient(circle farthest-corner at center center, #cba844 0%, #f8f500 100%);
     margin: 0;
@@ -34,20 +32,19 @@ body {
     border-radius: 4px;
 }
 
-#task_txt{
+#task_txt {
     font-size: 1.6em;
     color: black;
 }
 
-#add_btn{
+#add_btn {
     background-color: rgb(95, 93, 93);
     color: rgb(255, 255, 255);
     border-radius: 0 4px 4px 0;
     font-size: 2em;
-
 }
 
-#add_btn:hover{
+#add_btn:hover {
     background: radial-gradient(circle farthest-corner at center center, #cba844 0%, #f8f500 100%);
     color: black;
 }
@@ -63,11 +60,11 @@ li {
     font-family: 'Comfortaa', cursive;
     margin: 10px;
     border-radius: 8px;
-
+    width: 80vw;
 }
 
 li:hover {
-    transform: scale(1.2) translate(-1px,0px);
+    transform: scale(1) translate(-1px, 0px);
     background-color: #e26d00;
     color: azure;
     line-height: 2em;

@@ -1,14 +1,14 @@
-var risultato = document.getElementById("risultato")
+var risultato = document.querySelector("#risultato")
 
-function mostraTasto(tasto){
+function mostraTasto(tasto) {
     let valoreTasto = tasto.id
     risultato.innerHTML += valoreTasto
 }
 
-function resetButton(){
+function resetButton() {
     risultato.innerHTML = ""
 }
 
-function totale(){
+function totale() {
     risultato.innerHTML = eval(risultato.innerHTML)
 }
