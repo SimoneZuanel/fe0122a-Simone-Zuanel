@@ -22,15 +22,26 @@
 // uso il metodo animate per cambiare il valore della proprietà left
 
 var prev = $("#l-btn");
+var succ = $("#r-btn")
 
 $(document).ready(function() {
     prev.click(function() {
         var carosello = $("#img-l");
-        var lProp = parseInt(carosello.css("left"));
-        var newProp = 0;
+        let lProp = parseInt(carosello.css("left"));
+        let newProp = 0;
         if (lProp - 300 >= -carosello.width() + 300) {
             newProp = lProp - 300;
         }
         carosello.animate({ left: newProp });
+    });
+
+    succ.click(function() {
+        var carosello = $("#img-l");
+        let rProp = parseInt(carosello.css("right"));
+        let newProp = 0;
+        if (rProp + 300 <= carosello.width() - 300) {
+            newProp = rProp + 300;
+        }
+        carosello.animate({ right: newProp });
     });
 });
