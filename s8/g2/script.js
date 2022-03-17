@@ -1,4 +1,5 @@
 let verificaSaldo = document.getElementById("verifica-saldo");
+console.log(verificaSaldo)
 class SonAccount {
     constructor(balanceInit) {
         this.balanceInit = balanceInit;

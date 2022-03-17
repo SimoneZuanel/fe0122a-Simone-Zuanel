@@ -72,8 +72,8 @@ class Operai extends CodiceRedditivitaTre {
   }
 }
 
-let lavoratoreUno = new Artigiani(35000);
-let lavoratoreDue = new Impiegati(35000);
+let lavoratoreUno = new Artigiani(17000);
+let lavoratoreDue = new Impiegati(24000);
 let lavoratoreTre = new Operai(35000);
 
 console.log(lavoratoreUno);
