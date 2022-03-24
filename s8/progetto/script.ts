@@ -5,8 +5,8 @@ fetch ("Abbigliamento.json")
         let cloth = new Clothes(item.id, item.codprod, item.collezione, item.capo, item.modello, item.quantita, item.colore, item.prezzoivaesclusa, item.prezzoivainclusa, item.disponibile, item.saldo)
         
         console.log(cloth)
-        console.log("Sconto da applicare: " + cloth.getsaldocapo() + " €")
-        console.log("Prezzo scontato: " + cloth.getacquistocapo() + " €")
+        console.log("Sconto da applicare: " + cloth.getSaldoCapo() + " €")
+        console.log("Prezzo scontato: " + cloth.getAcquistoCapo() + " €")
     })
 })
 
@@ -37,12 +37,12 @@ class Clothes {
         this.saldo = saldo
     }
 
-    getsaldocapo(): number {
+    getSaldoCapo(): number {
         return this.prezzoivainclusa * this.saldo / 100
     }
 
-    getacquistocapo(): number {
-        return this.prezzoivainclusa - this.getsaldocapo()
+    getAcquistoCapo(): number {
+        return this.prezzoivainclusa - this.getSaldoCapo()
     }
     
 }
@@ -52,11 +52,11 @@ let cloth2: Clothes = new Clothes(7, 9999, "primavera", "gonna", 1266, 6, "beige
 let cloth3: Clothes = new Clothes(8, 3237, "estate", "pantalone", 1041, 4, "nero", 25.30, 30.90, "negozio", 50)
 
 console.log(cloth1)
-console.log("Sconto da applicare: " + cloth1.getsaldocapo() + " €")
-console.log("Prezzo scontato: " + cloth1.getacquistocapo() + " €")
+console.log("Sconto da applicare: " + cloth1.getSaldoCapo() + " €")
+console.log("Prezzo scontato: " + cloth1.getAcquistoCapo() + " €")
 console.log(cloth2)
-console.log("Sconto da applicare: " + cloth2.getsaldocapo() + " €")
-console.log("Prezzo scontato: " + cloth2.getacquistocapo() + " €")
+console.log("Sconto da applicare: " + cloth2.getSaldoCapo() + " €")
+console.log("Prezzo scontato: " + cloth2.getAcquistoCapo() + " €")
 console.log(cloth3)
-console.log("Sconto da applicare: " + cloth3.getsaldocapo() + " €")
-console.log("Prezzo scontato: " + cloth3.getacquistocapo() + " €")
+console.log("Sconto da applicare: " + cloth3.getSaldoCapo() + " €")
+console.log("Prezzo scontato: " + cloth3.getAcquistoCapo() + " €")
